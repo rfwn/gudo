@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "build": "npm-run-all clean tsc",
+    "clean": "rimraf dist",
+    "nodemon": "nodemon --watch dist",
+    "start": "node dist/index.js",
+    "dev": "npm-run-all build start",
+    "test": "",
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.17.1",
+    "discord.js": "^14.16.1",
+    "dotenv": "^16.4.5"
+  }
+}
